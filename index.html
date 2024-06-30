@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Password Generator</h2>
+        </div>
+
+        <div class="input">
+            <input type="text" name="Password" id="Password" placeholder="Ex:xA5@23">
+            <span id="copy_btn">&#9986</span>
+        </div>
+
+        <div class="password-options">
+            <div class="choose-length">
+                <label for="length">
+                    <span>Character Length</span>
+                    <span id="choosen_length">0</span>
+                </label>
+                <input type="range" name="length" id="length" value="0" min="6" max="12" step="2">
+            </div>
+
+            <div class="options-include">
+                <div class="option">
+                    <input type="checkbox" name="" id="upper">
+                    <label for="upper">Include Uppercase Letters</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="" id="lower">
+                    <label for="lower">Include Lowercase Letters</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="" id="number">
+                    <label for="number">Include Numbers</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="" id="symbols">
+                    <label for="symbols">Include Special Characters</label>
+                </div>
+            </div>
+
+            <div class="strength">
+                <span>STRENGTH</span>
+                <div class="indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <button class="generate-btn">Generate</button>
+
+        </div>
+    </div>
+
+    <script src="functionality.js"></script>
+</body>
+
+</html>
